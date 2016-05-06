@@ -1,7 +1,7 @@
 Package.describe({
   name: 'elledienne:analytics',
-  version: '1.0',
-  summary: 'Fork (& fix) of the great okgrow:analytics package, a complete Google Analytics, Mixpanel, KISSmetrics (and more) integration for Meteor',
+  version: '1.0.6',
+  summary: 'Fork (& fix) of the great okgrow:analytics package',
   git: 'https://github.com/elledienne/analytics',
   documentation: 'README.md'
 });
