@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'okgrow:analytics',
-  version: '1.0.5',
-  summary: 'Complete Google Analytics, Mixpanel, KISSmetrics (and more) integration for Meteor',
-  git: 'https://github.com/okgrow/analytics',
+  name: 'elledienne:analytics',
+  version: '1.0',
+  summary: 'Fork (& fix) of the great okgrow:analytics package, a complete Google Analytics, Mixpanel, KISSmetrics (and more) integration for Meteor',
+  git: 'https://github.com/elledienne/analytics',
   documentation: 'README.md'
 });
 
@@ -12,7 +12,7 @@ Package.onUse(function(api) {
   api.use('accounts-base', ['client', 'server'], {weak: true});
   api.use('browser-policy-content', 'server', {weak: true});
 
-  //weak dependencies indicate we will load after the following packages
+  // weak dependencies indicate we will load after the following packages
   // and constrain their versions IF another package, or app brings them in
   api.use('iron:router@1.0.7', 'client', {weak: true});
   api.use('meteorhacks:flow-router@1.17.2', 'client', {weak: true});
