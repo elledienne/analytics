@@ -129,6 +129,11 @@ initFlowRouter = function(){
   }
 }
 
+startFlowRouter = function (){
+  if (_FlowRouter) {
+    _FlowRouter.initialize()
+  }
+}
 
 var userEmail;
 Meteor.startup(function () {
@@ -139,6 +144,7 @@ Meteor.startup(function () {
       initIronRouter();
     }
     analytics.initialize(settings);
+    startFlowRouter();
   } else {
     console.log("Missing analyticsSettings in Meteor.settings.public");
   }
